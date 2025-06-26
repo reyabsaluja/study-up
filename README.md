@@ -10,49 +10,77 @@ https://github.com/user-attachments/assets/6e5bc6b9-fa0c-423a-b1d9-c652b3b69478
 
 ## 🚀 How It Works
 
-1. **Manage**: Create warehouses and add items with SKUs, quantities, and locations  
-2. **Scan**: Instantly scan barcodes using your device’s camera for quick item lookup or entry  
-3. **Organize**: Perform batch edits or transfer items between warehouses with ease  
-4. **Visualize**: View inventory in table, dashboard, or interactive graph formats  
-5. **Export**: One-click export to CSV or Excel for reporting and integrations  
+1. **Organize**: Create and manage courses, assignments, notes, and materials
+2. **Study**: Generate AI-powered study plans and summaries tailored to your needs
+3. **Track**: Monitor progress and past activity with a built-in dashboard
+4. **Summarize**: Use the AI tutor to condense lengthy notes into key points
+5. **Upload**: Securely upload and manage course materials
 
 ---
 
 ## 🔧 Features
 
-- 📦 Multi-warehouse inventory tracking  
-- 🔍 Barcode & QR code scanning via webcam  
-- ⚙️ Batch operations for efficient updates  
-- 📊 Recharts-powered analytics dashboard  
-- 🕸️ Interactive graph view of warehouse relationships  
-- 📁 Export to CSV and Excel formats  
-- 📱 Fully responsive mobile-friendly design  
+- 📚 Course & assignment management with autosave notes
+- 🤖 AI Tutor powered by Gemini via Supabase Edge Functions
+- 📊 Visual analytics using Recharts and date-fns
+- 📁 File uploads secured with Supabase Storage policies
+- 🔒 Auth via Supabase with RLS and user-specific data access
+- 📝 Smart note editor with tagging and AI-generated summaries
+- 📆 Study session tracking and activity logging
+- 🧠 Gemini-based chat + study-plan generation (via Deno Edge Functions)
 
 ---
 
 ## 🛠️ Architecture
 
-- **Frontend**: Next.js 15, TypeScript, Tailwind CSS, [shadcn/ui](https://ui.shadcn.com)  
-- **Data Viz**: [Recharts](https://recharts.org/)  
-- **Camera Access**: Native Web APIs  
+- **Frontend**: React 18, TypeScript, Vite, Tailwind CSS, shadcn/ui, React Router
+- **State & Forms**: React Query, React Hook Form, Zod
+- **Backend**: Supabase PostgreSQL with migrations & RLS policies
+- **Functions**: Supabase Edge Functions for chat and AI plan generation
+- **Libraries**: Recharts, Sonner, Embla, Lucide, pdfjs-dist, clsx, class-variance-authority
 
 ---
 
-## Quick Start
+## ⚡ Quick Start
 
 ### Prerequisites
 
 - Node.js 18+
+- Supabase project
+- Gemini API key
 
 ### Setup
 
 ```bash
 npm install
+```
 
+Create a .env file with:
+
+```bash
+VITE_SUPABASE_URL=<your-supabase-url>
+VITE_SUPABASE_ANON_KEY=<your-anon-key>
+GEMINI_API_KEY=<your-gemini-key>
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-#### Deployed @ [https://tscan.vercel.app/](https://tscan.vercel.app/)
+Visit: http://localhost:8080 
+
+Supabase Setup
+1. Run all SQL files in supabase/migrations/ to initialize the database schema
+2. Deploy edge functions in supabase/functions/ using the Supabase CLI:
+
+```bash
+supabase functions deploy chat-with-gemini
+supabase functions deploy generate-study-plan
+```
+
+#### Deployed @ [https://study-up.lovable.app/)
 
 ## 🌐 Browser Compatibility
 
@@ -61,8 +89,6 @@ Supported on:
 - Firefox 88+  
 - Safari 14+  
 - Edge 90+
-
-> ⚠️ *Note: Camera access is required for barcode scanning.*
 
 ---
 
