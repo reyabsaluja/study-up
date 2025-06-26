@@ -1,5 +1,5 @@
 <div align="center">
-  ![image](https://github.com/user-attachments/assets/b2c5fe55-a1b2-44aa-9b95-e378e662e767)
+  <img alt="Logo" src="studyup-logo.svg" width="100" />
   <h1><strong>StudyUp</strong></h1>
   <p>An all-in-one AI-powered academic workspace that organizes your courses, assignments, and readings, and generates personalized study plans using full context.</p>
 </div>
