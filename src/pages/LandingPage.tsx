@@ -63,9 +63,9 @@ const LandingPage = () => {
         </div>
       </main>
 
-      <footer className="container z-10 mx-auto flex flex-col items-center justify-between gap-4 border-t border-violet-100 px-6 py-8 text-sm text-slate-500 sm:flex-row">
-        <Brand compact />
-        <div className="flex flex-wrap items-center justify-center gap-1.5">
+      <footer className="container z-10 mx-auto flex items-center justify-between gap-4 border-t border-violet-100 px-6 py-8 text-sm text-slate-500">
+        <Brand compact className="shrink-0" />
+        <div className="ml-auto flex flex-wrap items-center justify-end gap-1.5 text-right">
           <span>Built by</span>
           {creators.map(({ username, avatar }, index) => (
             <Fragment key={username}>

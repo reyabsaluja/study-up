@@ -25,7 +25,7 @@ const createProject = () => {
   mkdirSync(resolve(root, ".github/workflows"), { recursive: true });
 
   writeJson(root, "package.json", {
-    packageManager: "pnpm@10.34.5",
+    packageManager: "pnpm@12.4.1",
     scripts: {
       "test:ci:static": "true",
       "test:ci:unit": "true",

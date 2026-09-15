@@ -50,7 +50,7 @@
         "npm:@types/react-dom@19.2.3",
         "npm:@types/react@19.2.17",
         "npm:@vitejs/plugin-react@6.0.4",
-        "npm:@vitest/coverage-v8@4.1.10",
+        "npm:@vitest/coverage-v8@5.0.0",
         "npm:class-variance-authority@0.7.1",
         "npm:clsx@2.1.1",
         "npm:cmdk@1.1.1",
@@ -80,8 +80,8 @@
         "npm:typescript-eslint@8.65.0",
         "npm:typescript@6.0.3",
         "npm:vaul@1.1.2",
-        "npm:vite@8.1.5",
-        "npm:vitest@4.1.10",
+        "npm:vite@8.3.0",
+        "npm:vitest@5.0.0",
         "npm:wouter@3.10.0",
         "npm:zod@4.4.3"
       ]

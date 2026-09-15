@@ -6,6 +6,9 @@ preferFrozenLockfile: true
 savePrefix: ""
 strictPeerDependencies: true
 
+overrides:
+  brace-expansion: 5.0.9
+
 # Vite's optional WASM fallback currently declares prerelease emnapi peers even
 # though its stable runtime resolves these versions. Keep the exception narrow.
 peerDependencyRules:

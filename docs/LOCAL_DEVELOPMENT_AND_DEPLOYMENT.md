@@ -6,7 +6,7 @@ These control-plane steps require a human project owner:
 
 1. Install and start Docker Desktop. Allocate enough memory for the local
    Supabase stack.
-2. Use Node 22:
+2. Use Node 22.22.2:
 
    ```bash
    nvm install

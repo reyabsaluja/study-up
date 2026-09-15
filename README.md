@@ -28,7 +28,7 @@ students spend less time organizing and more time learning.
 
 ## Run it locally
 
-Use Node 22 and pnpm 10.34.5:
+Use Node 22.22.2 and pnpm 12.4.1:
 
 ```bash
 pnpm install --frozen-lockfile

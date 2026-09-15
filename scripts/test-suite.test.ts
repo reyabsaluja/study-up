@@ -22,7 +22,7 @@ interface ToolchainOptions {
 
 const createToolchain = ({
   nodeMajor = "22",
-  pnpmVersion = "10.34.5",
+  pnpmVersion = "12.4.1",
   supabaseRunning = false,
   failCommand,
 }: ToolchainOptions = {}) => {
@@ -36,7 +36,7 @@ const createToolchain = ({
     `#!/bin/sh
 case "$*" in
   *process.versions.node*) printf '%s\\n' '${nodeMajor}' ;;
-  *packageManager*) printf '%s\\n' '10.34.5' ;;
+  *packageManager*) printf '%s\\n' '12.4.1' ;;
   *) exit 0 ;;
 esac
 `,
@@ -155,7 +155,7 @@ describe("test suite shell entry point", () => {
     const result = runSuite("quick", { pnpmVersion: "11.18.0" });
 
     expect(result.status).toBe(1);
-    expect(result.stderr).toContain("pnpm 10.34.5 is required");
+    expect(result.stderr).toContain("pnpm 12.4.1 is required");
     expect(result.commands).toEqual([]);
   });
 

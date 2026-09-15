@@ -33,7 +33,7 @@ const vercelIgnore = readFileSync(".vercelignore", "utf8")
   .map((line) => line.trim())
   .filter((line) => line && !line.startsWith("#"));
 
-if (packageManifest.packageManager !== "pnpm@10.34.5") {
+if (packageManifest.packageManager !== "pnpm@12.4.1") {
   fail("package.json must pin the approved pnpm release.");
 }
 if (!pnpmWorkspace.includes('packages:\n  - "."')) {
